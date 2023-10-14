@@ -65,7 +65,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView6">
 
         <EditText
-            android:id="@+id/masukkanUsername"
+            android:id="@+id/editkode"
             android:layout_width="275dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
@@ -76,7 +76,7 @@
             android:textColor="@color/white" />
 
         <EditText
-            android:id="@+id/namabarang"
+            android:id="@+id/editnamasparepart"
             android:layout_width="275dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
@@ -87,7 +87,7 @@
             android:textColor="@color/white" />
 
         <EditText
-            android:id="@+id/jumlahbarang"
+            android:id="@+id/editstoksparepart"
             android:layout_width="275dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
@@ -98,7 +98,7 @@
             android:textColor="@color/white" />
 
         <EditText
-            android:id="@+id/hargabarang"
+            android:id="@+id/editdeskripsi"
             android:layout_width="275dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
@@ -109,7 +109,7 @@
             android:textColor="@color/white" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/sign_in"
+            android:id="@+id/simpanSparepart"
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:layout_marginTop="32dp"
