@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Login"
-    android:background="#626F85">
+    android:background="#626F85"
+    tools:ignore="ExtraText">
 
     <ImageView
         android:id="@+id/imageView4"
@@ -75,6 +76,7 @@
     android:layout_height="50dp"
     android:layout_marginTop="32dp"
     android:text="SIGN IN"
+    android:textStyle="bold"
     android:textColor="@color/white"
     android:background="@drawable/login"
     app:layout_constraintEnd_toEndOf="parent"
