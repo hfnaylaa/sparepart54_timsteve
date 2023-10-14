@@ -5,13 +5,13 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "tbbarang")
-data class Barang (
+data class Barang(
     @PrimaryKey
-    val kode_barang : Int,
+    val kode_barang: Int,
     @ColumnInfo
-    val nama_barang : String,
+    val nama_barang: String,
     @ColumnInfo
-    val stok_barang : Int,
+    val stok_barang: Int,
     @ColumnInfo
-    val deskripsi_barang : String
+    val deskripsi_barang: String
         )
