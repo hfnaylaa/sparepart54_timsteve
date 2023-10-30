@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".recycle_vw"
-    android:background="#626F85">
+    tools:context=".adaptertransaksi">
 
 
     <LinearLayout
@@ -29,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="55dp"
             android:layout_marginTop="10dp"
-            android:text="Detail Sparepart"
+            android:text="Detail Transaksi"
             android:textColor="@color/black"
             android:textSize="35dp"
             android:textStyle="bold" />
@@ -61,7 +60,6 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:listitem="@layout/adaptersparepart"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
