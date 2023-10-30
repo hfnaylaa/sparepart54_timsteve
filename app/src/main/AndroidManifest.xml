@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Sparepart54_timsteve"
         tools:targetApi="31">
         <activity
-            android:name=".adaptertransaksi"
+            android:name=".recycletransaksi"
             android:exported="false" />
         <activity
             android:name=".editsparepart"
