@@ -1,10 +1,12 @@
 package com.iffa.sparepart54_timsteve.roomsteve
 
+import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import androidx.room.Update
 
+@Dao
 interface barangDAO {
     @Insert
     fun simpan_databarang(barang: Barang)
