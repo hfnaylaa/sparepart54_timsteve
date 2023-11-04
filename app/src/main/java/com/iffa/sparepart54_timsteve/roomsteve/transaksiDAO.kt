@@ -1,10 +1,8 @@
 package com.iffa.sparepart54_timsteve.roomsteve
 
-import androidx.room.Delete
-import androidx.room.Insert
-import androidx.room.Query
-import androidx.room.Update
+import androidx.room.*
 
+@Dao
 interface transaksiDAO {
     @Insert
     fun simpandata_transaksi(transaksi: Transaksi)

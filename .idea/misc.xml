@@ -1,7 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/kel2/app/src/main/res/layout/activity_dashboard.xml" value="0.67" />
+        <entry key="..\:/kel2/app/src/main/res/layout/activity_editsparepart.xml" value="0.25" />
+        <entry key="..\:/kel2/app/src/main/res/layout/activity_edittransaksi.xml" value="0.25" />
+        <entry key="..\:/kel2/app/src/main/res/layout/activity_inptransaksi.xml" value="0.25" />
+        <entry key="..\:/kel2/app/src/main/res/layout/activity_inptsparepart.xml" value="0.20416666666666666" />
+        <entry key="..\:/kel2/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/kel2/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/kel2/app/src/main/res/layout/activity_recycle_vw.xml" value="0.16" />
+        <entry key="..\:/kel2/app/src/main/res/layout/activity_recycletransaksi.xml" value="0.18" />
+        <entry key="..\:/kel2/app/src/main/res/layout/adaptersparepart.xml" value="0.1" />
+        <entry key="..\:/kel2/app/src/main/res/layout/adaptertransaksi.xml" value="0.20416666666666666" />
         <entry key="..\:/sparepart54_timsteve/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1595" />
         <entry key="..\:/sparepart54_timsteve/app/src/main/res/drawable/bgadapter.xml" value="0.179" />
         <entry key="..\:/sparepart54_timsteve/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1595" />
@@ -23,7 +35,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

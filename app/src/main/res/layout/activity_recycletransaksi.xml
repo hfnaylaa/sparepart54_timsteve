@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#626F85"
     tools:context=".recycletransaksi">
 
 
@@ -53,13 +54,30 @@
         app:srcCompat="@drawable/kisspng_mechanical_engineering_t_shirt_computer_engineerin_gear_png_download_image_peoplepng_com_peoplepng_5b89db15ee2a69_2680568915357611739755_removebg_preview__1_" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView2"
         android:layout_width="match_parent"
         android:layout_height="660dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintStart_toStartOf="parent"
-        tools:listitem="@layout/adaptersparepart"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout1" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floadtransaksi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="355dp"
+        android:layout_marginTop="448dp"
+        android:layout_marginBottom="18dp"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/recyclerView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        app:srcCompat="@android:drawable/ic_input_add"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

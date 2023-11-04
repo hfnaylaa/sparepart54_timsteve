@@ -112,6 +112,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/btnhaputs"
         android:layout_width="155dp"
         android:layout_height="48dp"
         android:text="HAPUS"
@@ -120,6 +121,7 @@
         android:layout_marginLeft="50dp"/>
 
     <Button
+        android:id="@+id/btneditts"
         android:layout_width="155dp"
         android:layout_height="48dp"
         android:text="EDIT"

@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.iffa.sparepart54_timsteve.databinding.ActivityInptransaksiBinding
-import com.iffa.sparepart54_timsteve.roomsteve.Barang
 import com.iffa.sparepart54_timsteve.roomsteve.Sparepart54
 import com.iffa.sparepart54_timsteve.roomsteve.Transaksi
 import kotlinx.coroutines.CoroutineScope
