@@ -11,29 +11,36 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class inptsparepart : AppCompatActivity() {
+    private lateinit var binding: ActivityInptsparepartBinding
+    private lateinit var database: Sparepart54
 
-    private lateinit var binding : ActivityInptsparepartBinding
-    private val db by lazy { Sparepart54(this) }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityInptsparepartBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        this.simpan_databarang()
-    }
 
-    private fun simpan_databarang(){
-        binding.inputpart.setOnClickListener {
-        CoroutineScope(Dispatchers.IO).launch {
-            db.barangdao().simpan_databarang(
-                Barang(
-                    kode_barang = binding.kodepart.text.toString().toInt(),
-                    nama_barang = binding.namapart.text.toString(),
-                    stok_barang = binding.jumlahpart.text.toString().toInt(),
-                    deskripsi_barang = binding.deskripsipart.text.toString()
+        database = Sparepart54.invoke(applicationContext)
+        binding.inputpart.setOnClickListener{
+            if (binding.kodepart.text.isNotEmpty() &&
+                binding.namapart.text.isNotEmpty() &&
+                binding.stokpart.text.isNotEmpty() &&
+                binding.deskripsipart.text.isNotEmpty()
+            ){
+                database.barangdao().simpan_databarang(Barang(
+                    binding.kodepart.text.toString().toInt(),
+                    binding.namapart.text.toString(),
+                    binding.stokpart.text.toString().toInt(),
+                    binding.deskripsipart.text.toString()
+                ))
+
+                binding.kodepart.setText("")
+                binding.namapart.setText("")
+                binding.stokpart.setText("")
+                binding.deskripsipart.setText("")
+                startActivity(
+                    Intent(this,Dashboard::class.java)
                 )
-            )
-        }
-            startActivity(Intent(this,recycle_vw::class.java))
+            }
         }
     }
 }

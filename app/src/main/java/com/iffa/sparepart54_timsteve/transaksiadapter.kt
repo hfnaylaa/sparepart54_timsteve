@@ -10,8 +10,8 @@ import com.iffa.sparepart54_timsteve.roomsteve.Barang
 import com.iffa.sparepart54_timsteve.roomsteve.Transaksi
 
 class transaksiadapter(val list: ArrayList<Transaksi>, var Listener: Any) :
-RecyclerView.Adapter<transaksiadapter.ViewHolder>(){
-    class ViewHolder(view: View) : RecyclerView.ViewHolder(view){
+RecyclerView.Adapter<transaksiadapter.TransaksiHolder>(){
+    class TransaksiHolder(view: View) : RecyclerView.ViewHolder(view){
         val kode = itemView.findViewById<TextView>(R.id.kodets)
         val nama = itemView.findViewById<TextView>(R.id.namabrgts)
         val jumlah = itemView.findViewById<TextView>(R.id.jumlahbrgts)
@@ -21,8 +21,8 @@ RecyclerView.Adapter<transaksiadapter.ViewHolder>(){
 
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        return ViewHolder(
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TransaksiHolder {
+        return TransaksiHolder(
             LayoutInflater.from(parent.context)
                 .inflate(
                     R.layout.adaptertransaksi,
@@ -32,7 +32,7 @@ RecyclerView.Adapter<transaksiadapter.ViewHolder>(){
         )
     }
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: TransaksiHolder, position: Int) {
         holder.kode.text = list[position].kode_Transaksi.toString()
         holder.nama.text = list[position].nama_Barang.toString()
         holder.jumlah.text = list[position].jumlah_Barang.toString()

@@ -87,7 +87,7 @@
             android:textColor="@color/white" />
 
         <EditText
-            android:id="@+id/jumlahpart"
+            android:id="@+id/stokpart"
             android:layout_width="275dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
@@ -112,11 +112,11 @@
             android:id="@+id/inputpart"
             android:layout_width="150dp"
             android:layout_height="50dp"
-            android:layout_marginTop="32dp"
-            android:text="Simpan"
             android:layout_gravity="center"
-            android:textColor="@color/white"
+            android:layout_marginTop="32dp"
             android:background="@drawable/login"
+            android:text="Simpan"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"

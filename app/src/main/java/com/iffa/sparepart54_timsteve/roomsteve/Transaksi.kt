@@ -13,6 +13,6 @@ data class Transaksi(
     @ColumnInfo
     val jumlah_Barang: Int,
     @ColumnInfo
-    val harga_Barang: Int
+    val harga_Barang: Int,
 
-        )
+    )

@@ -26,6 +26,7 @@
             android:orientation="horizontal"
             android:layout_marginTop="5dp">
             <TextView
+                android:id="@+id/kodepart"
                 android:layout_width="135dp"
                 android:layout_height="wrap_content"
                 android:text="Kode part   :"
@@ -42,6 +43,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/namapart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -68,6 +70,7 @@
             android:orientation="horizontal"
             android:layout_marginTop="5dp">
             <TextView
+                android:id="@+id/stokpart"
                 android:layout_width="135dp"
                 android:layout_height="wrap_content"
                 android:text="Stok part     :"
@@ -89,6 +92,7 @@
             android:orientation="horizontal"
             android:layout_marginTop="5dp">
             <TextView
+                android:id="@+id/deskpart"
                 android:layout_width="135dp"
                 android:layout_height="wrap_content"
                 android:text="Deskripsi     :"

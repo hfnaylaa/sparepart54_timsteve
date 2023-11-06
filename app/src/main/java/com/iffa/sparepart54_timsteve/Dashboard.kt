@@ -7,14 +7,14 @@ import com.iffa.sparepart54_timsteve.databinding.ActivityDashboardBinding
 
 class Dashboard : AppCompatActivity() {
 
-    private  lateinit var  find :ActivityDashboardBinding
+    private  lateinit var  splashscreen :ActivityDashboardBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        find = ActivityDashboardBinding.inflate(layoutInflater)
+        splashscreen = ActivityDashboardBinding.inflate(layoutInflater)
         setContentView(R.layout.activity_dashboard)
-        setContentView(find.root)
+        setContentView(splashscreen.root)
 
-        find.Transaksi.setOnClickListener{
+        splashscreen.Transaksi.setOnClickListener{
             startActivity(Intent(this,inptsparepart::class.java))
         }
     }

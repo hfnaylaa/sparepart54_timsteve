@@ -48,18 +48,7 @@ class recycletransaksi : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        getData()
-    }
-    fun getData() {
-        binding.recyclerView2.layoutManager = LinearLayoutManager(this)
-        CoroutineScope(Dispatchers.IO).launch {
-            val dataTransaksi = db.transaksidao().tampildata_transaksi()
-            adapter.list.addAll(dataTransaksi)
-            withContext(Dispatchers.Main) {
-                adapter.notifyDataSetChanged()
-            }
-        }
-        binding.recyclerView2.adapter = adapter
-    }
 
+
+    }
 }

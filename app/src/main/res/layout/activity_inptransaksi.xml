@@ -76,7 +76,7 @@
             android:textColor="@color/white" />
 
         <EditText
-            android:id="@+id/namabarang"
+            android:id="@+id/namabrg"
             android:layout_width="275dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
@@ -87,7 +87,7 @@
             android:textColor="@color/white" />
 
         <EditText
-            android:id="@+id/jumlahbarang"
+            android:id="@+id/jumlahbrg"
             android:layout_width="275dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
@@ -98,7 +98,7 @@
             android:textColor="@color/white" />
 
         <EditText
-            android:id="@+id/hargabarang"
+            android:id="@+id/hargabrg"
             android:layout_width="275dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
@@ -109,7 +109,7 @@
             android:textColor="@color/white" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/inputtrans"
+            android:id="@+id/inpttrans"
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:layout_marginTop="32dp"
