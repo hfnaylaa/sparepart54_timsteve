@@ -36,7 +36,7 @@ class Login : AppCompatActivity() {
                 alert("pasword minnimal 8 huruf")
             }
         } else {
-            alert("ojo di kosongi mas!")
+            alert("ojo di kosongi mas!!")
         }
     }
 }
