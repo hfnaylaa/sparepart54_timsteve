@@ -25,12 +25,14 @@ class recycletransaksi : AppCompatActivity() {
 
         adapter = transaksiadapter(arrayListOf(),
             object : transaksiadapter. OnClickListener {
-                fun onCreate(transaksi: Transaksi) {
+                override fun onCreate(transaksi: Transaksi) {
 
-                 }
-                fun onDelete(transaksi: Transaksi){
-                    deleteDatabase(transaksi)
 
+
+                }
+
+                override fun onDelete(transaksi: Transaksi) {
+                    TODO("Not yet implemented")
                 }
 
             }
