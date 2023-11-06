@@ -12,28 +12,27 @@ import kotlinx.coroutines.launch
 
 class inptransaksi : AppCompatActivity() {
 
-    private lateinit var binInput : ActivityInptransaksiBinding
+    private lateinit var binding : ActivityInptransaksiBinding
     private val db by lazy { Sparepart54(this) }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binInput = ActivityInptransaksiBinding.inflate(layoutInflater)
-        setContentView(binInput.root)
-        binInput.inputtrans.setOnClickListener{
-            simpandata_transaksi()
-        }
+        binding = ActivityInptransaksiBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        this.simpandata_transaksi()
     }
     private fun simpandata_transaksi() {
+        binding.inputtrans.setOnClickListener {
         CoroutineScope(Dispatchers.IO).launch {
             db.transaksidao().simpandata_transaksi(
                 Transaksi(
-                    binInput.kodetrans.text.toString().toInt(),
-                    binInput.namabarang.text.toString(),
-                    binInput.jumlahbarang.text.toString().toInt(),
-                    binInput.hargabarang.text.toString().toInt()
+                    kode_Transaksi = binding.kodetrans.text.toString().toInt(),
+                    nama_Barang = binding.namabarang.text.toString(),
+                    jumlah_Barang = binding.jumlahbarang.text.toString().toInt(),
+                    harga_Barang = binding.hargabarang.text.toString().toInt()
                 )
             )
-            finish()
         }
         startActivity(Intent(this,recycle_vw::class.java))
+        }
     }
 }

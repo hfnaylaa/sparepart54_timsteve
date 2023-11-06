@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.iffa.sparepart54_timsteve.roomsteve.Barang
 import com.iffa.sparepart54_timsteve.roomsteve.Transaksi
 
-class transaksiadapter(val list: ArrayList<Transaksi>, var listener: Any) :
+class transaksiadapter(val list: ArrayList<Transaksi>, var Listener: Any) :
 RecyclerView.Adapter<transaksiadapter.ViewHolder>(){
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view){
         val kode = itemView.findViewById<TextView>(R.id.kodets)
@@ -34,22 +34,23 @@ RecyclerView.Adapter<transaksiadapter.ViewHolder>(){
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.kode.text = list[position].kode_Transaksi.toString()
-        holder.nama.text = list[position].nama_Barang
+        holder.nama.text = list[position].nama_Barang.toString()
         holder.jumlah.text = list[position].jumlah_Barang.toString()
         holder.harga.text = list[position].harga_Barang.toString()
-        holder.hapus.setOnClickListener {
-            listener.onDelete(list[position])
-        }
-        holder.edit.setOnClickListener {
-            listener.onCreate(list[position])
-        }
+
+
 
 
     }
 
     override fun getItemCount(): Int {
+        return list.size
+    }
+
+    interface OnClickListener{
         fun onCreate(transaksi: Transaksi)
         fun onDelete(transaksi: Transaksi)
     }
 
 }
+

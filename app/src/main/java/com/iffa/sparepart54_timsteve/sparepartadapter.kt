@@ -1,4 +1,7 @@
 package com.iffa.sparepart54_timsteve
 
-class sparepartadapter {
+import com.iffa.sparepart54_timsteve.roomsteve.Barang
+
+class sparepartadapter
+{
 }
