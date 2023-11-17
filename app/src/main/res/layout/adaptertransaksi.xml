@@ -112,7 +112,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnhaputs"
+        android:id="@+id/transhapus"
         android:layout_width="155dp"
         android:layout_height="48dp"
         android:text="HAPUS"
@@ -121,7 +121,7 @@
         android:layout_marginLeft="50dp"/>
 
     <Button
-        android:id="@+id/btneditts"
+        android:id="@+id/transedit"
         android:layout_width="155dp"
         android:layout_height="48dp"
         android:text="EDIT"
