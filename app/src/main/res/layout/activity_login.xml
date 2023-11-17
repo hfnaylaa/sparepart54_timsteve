@@ -61,7 +61,7 @@
             android:layout_width="275dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:hint="Password"
+            android:hint="Pass"
             android:paddingLeft="20dp"
             android:textColor="@color/white"
             android:layout_marginTop="20dp"
