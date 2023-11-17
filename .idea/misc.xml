@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Sparepart54/app/src/main/res/layout/activity_recycle_vw.xml" value="0.1921875" />
+        <entry key="..\:/Sparepart54/app/src/main/res/layout/activity_recycletransaksi.xml" value="0.1921875" />
         <entry key="..\:/kel2/app/src/main/res/layout/activity_dashboard.xml" value="0.67" />
         <entry key="..\:/kel2/app/src/main/res/layout/activity_editsparepart.xml" value="0.25" />
         <entry key="..\:/kel2/app/src/main/res/layout/activity_edittransaksi.xml" value="0.25" />

@@ -54,7 +54,7 @@
         app:srcCompat="@drawable/kisspng_mechanical_engineering_t_shirt_computer_engineerin_gear_png_download_image_peoplepng_com_peoplepng_5b89db15ee2a69_2680568915357611739755_removebg_preview__1_" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+        android:id="@+id/recyclerpart"
         android:layout_width="match_parent"
         android:layout_height="660dp"
         app:layout_constraintBottom_toBottomOf="parent"

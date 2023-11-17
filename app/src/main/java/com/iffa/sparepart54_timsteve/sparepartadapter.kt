@@ -6,9 +6,10 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.iffa.sparepart54_timsteve.roomsteve.Barang
+import com.iffa.sparepart54_timsteve.roomsteve.PartDAO
 import com.iffa.sparepart54_timsteve.roomsteve.Transaksi
 
-class sparepartadapter(var list: ArrayList<Barang>, var listener: onClickListener) :
+class sparepartadapter(var list: ArrayList<Barang>) :
     RecyclerView.Adapter<sparepartadapter.SparepartHolder>() {
     class SparepartHolder(view: View) : RecyclerView.ViewHolder(view) {
         val KodePart = itemView.findViewById<TextView>(R.id.kodepart)
@@ -38,5 +39,9 @@ class sparepartadapter(var list: ArrayList<Barang>, var listener: onClickListene
 
     interface onClickListener {
         fun onClick(transaksi: Transaksi)
+    }
+    fun setData(barang: List<Barang>){
+        list.clear()
+        list.addAll(barang)
     }
 }

@@ -6,9 +6,10 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.iffa.sparepart54_timsteve.roomsteve.Barang
 import com.iffa.sparepart54_timsteve.roomsteve.Transaksi
 
-class transaksiadapter(val list: ArrayList<Transaksi>, var Listener: Any) :
+class transaksiadapter(val list: ArrayList<Transaksi>) :
 RecyclerView.Adapter<transaksiadapter.TransaksiHolder>(){
     class TransaksiHolder(view: View) : RecyclerView.ViewHolder(view){
         val kode = itemView.findViewById<TextView>(R.id.kodets)
@@ -50,6 +51,9 @@ RecyclerView.Adapter<transaksiadapter.TransaksiHolder>(){
         fun onCreate(transaksi: Transaksi)
         fun onDelete(transaksi: Transaksi)
     }
-
+    fun setAll(transaksi: List<Transaksi>) {
+        list.clear()
+        list.addAll(transaksi)
+    }
 }
 
