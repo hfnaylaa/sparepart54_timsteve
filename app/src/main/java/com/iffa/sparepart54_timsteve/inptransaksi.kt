@@ -25,7 +25,7 @@ class inptransaksi : AppCompatActivity() {
 
                 ){
 
-                database.transaksidao().simpandata_transaksi(
+                database.partdao().simpandata_transaksi(
                     Transaksi(
                     binding.kodetrans.text.toString().toInt(),
                     binding.namabrg.text.toString(),

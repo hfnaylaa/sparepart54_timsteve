@@ -26,7 +26,7 @@ class inptsparepart : AppCompatActivity() {
                 binding.stokpart.text.isNotEmpty() &&
                 binding.deskripsipart.text.isNotEmpty()
             ){
-                database.barangdao().simpan_databarang(Barang(
+                database.partdao().simpan_databarang(Barang(
                     binding.kodepart.text.toString().toInt(),
                     binding.namapart.text.toString(),
                     binding.stokpart.text.toString().toInt(),

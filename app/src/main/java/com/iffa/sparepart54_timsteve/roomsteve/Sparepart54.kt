@@ -7,8 +7,7 @@ import androidx.room.RoomDatabase
 
 @Database(entities = [Barang::class,Transaksi::class], version = 1)
 abstract class Sparepart54: RoomDatabase() {
-    abstract fun barangdao(): DAO
-    abstract fun transaksidao():DAO
+    abstract fun partdao(): PartDAO
 
     companion object{
         @Volatile

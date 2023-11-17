@@ -3,7 +3,7 @@ package com.iffa.sparepart54_timsteve.roomsteve
 import androidx.room.*
 
 @Dao
-interface DAO {
+interface PartDAO {
     @Insert
     fun simpan_databarang(barang: Barang)
     @Update
@@ -11,7 +11,7 @@ interface DAO {
     @Delete
     fun hapus_databarang(barang: Barang)
     @Query("Select* from tbbarang")
-    fun tampil_databarang () : List<DAO>
+    fun tampil_databarang () : List<Barang>
 
     @Insert
     fun simpandata_transaksi(transaksi: Transaksi)
@@ -20,5 +20,5 @@ interface DAO {
     @Delete
     fun hapusdata_transaksi(transaksi: Transaksi)
     @Query("Select* from tbtransaksi")
-    fun tampildata_transaksi () : List<DAO>
+    fun tampildata_transaksi () : List<Transaksi>
 }

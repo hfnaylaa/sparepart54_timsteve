@@ -6,7 +6,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.iffa.sparepart54_timsteve.roomsteve.Barang
 import com.iffa.sparepart54_timsteve.roomsteve.Transaksi
 
 class transaksiadapter(val list: ArrayList<Transaksi>, var Listener: Any) :
@@ -34,9 +33,9 @@ RecyclerView.Adapter<transaksiadapter.TransaksiHolder>(){
 
     override fun onBindViewHolder(holder: TransaksiHolder, position: Int) {
         holder.kode.text = list[position].kode_Transaksi.toString()
-        holder.nama.text = list[position].nama_Barang.toString()
-        holder.jumlah.text = list[position].jumlah_Barang.toString()
-        holder.harga.text = list[position].harga_Barang.toString()
+        holder.nama.text = list[position].nama_Transaksi.toString()
+        holder.jumlah.text = list[position].jumlah_Transaksi.toString()
+        holder.harga.text = list[position].harga_Transaksi.toString()
 
 
 

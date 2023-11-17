@@ -9,10 +9,10 @@ data class Transaksi(
     @PrimaryKey
     val kode_Transaksi: Int,
     @ColumnInfo
-    val nama_Barang: Any,
+    val nama_Transaksi: String,
     @ColumnInfo
-    val jumlah_Barang: Int,
+    val jumlah_Transaksi: Int,
     @ColumnInfo
-    val harga_Barang: Int,
+    val harga_Transaksi: Int,
 
     )
