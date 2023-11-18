@@ -38,7 +38,7 @@ class inptransaksi : AppCompatActivity() {
                 binding.jumlahbrg.setText("")
                 binding.hargabrg.setText("")
                 startActivity(
-                    Intent(this,Dashboard::class.java)
+                    Intent(this,recycle_vw::class.java)
                 )
             }
         }

@@ -1,5 +1,6 @@
 package com.iffa.sparepart54_timsteve
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -13,35 +14,47 @@ class Login : AppCompatActivity() {
         find = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(find.root)
 
+        val sharedPreferences = getSharedPreferences("Datauser",Context.MODE_PRIVATE)
+
         val inuser = find.masukkanUsername
         val inpass = find.masukkanPassword
         val password = "12345"
         val user = listOf<String>("penjual","pembeli")
-        find.signIn.setOnClickListener{
 
-            if (inuser.text.isNotEmpty() && inpass.text.isNotEmpty()){
-                if (inpass.text.length >= 8){
+        val keyUser = sharedPreferences.getString("username", "")
 
-                    if (inuser.text.toString() in user && inpass.text.toString() == password){
-                        startActivity(
-                            Intent(this, Dashboard::class.java)
-                                .putExtra("username", inuser.text.toString())
-                        )
-                        alert("selamat datang di Part54 ${inuser.text}")
-                        finish()
-                    } else {
-                        alert("pasword atu username salah")
-                    }
-            } else {
-                alert("pasword minnimal 8 huruf")
-            }
-        } else {
-            alert("ojo di kosongi mas!")
+        if (!keyUser.isNullOrEmpty()) {
+            login(keyUser)
         }
+
+
+        find.btnlogin.setOnClickListener{
+
+            if (inuser.text.isNotEmpty() && inpass.text.isNotEmpty()) {
+                if (inpass.text.length >= 8) {
+
+                    login(inuser.text.toString())
+
+                    } else {
+                        alert("password minimal 8 huruf")
+                    }
+                } else {
+                    alert("password atau username tidak boleh kosong")
+                }
+            }
+        }
+    private fun login(toString: String) {
+       startActivity(
+           Intent(this,Dashboard::class.java)
+               .putExtra("username",toString)
+       )
+        alert("Selamat Datang di Sparepart54")
+         finish()
     }
-}
+
 
     private fun alert(msg: String) {
         Toast.makeText(this,msg, Toast.LENGTH_SHORT).show()
     }
+
 }
