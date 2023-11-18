@@ -15,7 +15,7 @@ class Login : AppCompatActivity() {
 
         val inuser = find.masukkanUsername
         val inpass = find.masukkanPassword
-        val password = "12345"
+        val password = "12345678"
         val user = listOf<String>("penjual","pembeli")
         find.signIn.setOnClickListener{
 

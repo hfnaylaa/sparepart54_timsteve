@@ -5,7 +5,7 @@ import android.os.Bundle
 import com.iffa.sparepart54_timsteve.databinding.ActivityEdittransaksiBinding
 
 class edittransaksi : AppCompatActivity() {
-    lateinit var binding: ActivityEdittransaksiBinding
+    private lateinit var binding: ActivityEdittransaksiBinding
     var kodeTran = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

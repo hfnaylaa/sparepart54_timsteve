@@ -15,6 +15,9 @@ class Dashboard : AppCompatActivity() {
         setContentView(splashscreen.root)
 
         splashscreen.Transaksi.setOnClickListener{
+            startActivity(Intent(this,inptransaksi::class.java))
+        }
+        splashscreen.Sparepart.setOnClickListener{
             startActivity(Intent(this,inptsparepart::class.java))
         }
     }
