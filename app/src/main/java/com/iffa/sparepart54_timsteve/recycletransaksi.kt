@@ -37,7 +37,7 @@ class recycletransaksi : AppCompatActivity() {
     private fun showData() {
         binding.recyclertransaksi.layoutManager = LinearLayoutManager(this)
         CoroutineScope((Dispatchers.IO)).launch {
-            adapter.setAll(db.partdao().tampildata_transaksi())
+            adapter.setAll(db.partdao().tampildata_transaksi()  )
             withContext(Dispatchers.Main){
                 adapter.notifyDataSetChanged()
             }

@@ -20,27 +20,30 @@ class inptsparepart : AppCompatActivity() {
         setContentView(binding.root)
 
         database = Sparepart54.invoke(applicationContext)
-        binding.inputpart.setOnClickListener{
-            if (binding.kodepart.text.isNotEmpty() &&
-                binding.namapart.text.isNotEmpty() &&
-                binding.stokpart.text.isNotEmpty() &&
-                binding.deskripsipart.text.isNotEmpty()
-            ){
-                database.partdao().simpan_databarang(Barang(
-                    binding.kodepart.text.toString().toInt(),
+        binding.inputpart.setOnClickListener {
+            this.insertsparepart()
+        }
+    }
+
+    private fun insertsparepart() {
+        CoroutineScope(Dispatchers.IO).launch {
+            database.partdao().simpan_databarang(
+                Barang(
+                    0,
+
                     binding.namapart.text.toString(),
                     binding.stokpart.text.toString().toInt(),
                     binding.deskripsipart.text.toString()
-                ))
-
-                binding.kodepart.setText("")
-                binding.namapart.setText("")
-                binding.stokpart.setText("")
-                binding.deskripsipart.setText("")
-                startActivity(
-                    Intent(this,Dashboard::class.java)
                 )
-            }
+            )
+            binding.namapart.setText("")
+            binding.stokpart.setText("")
+            binding.deskripsipart.setText("")
+
+        }
+        binding.inputpart.setOnClickListener{
+            startActivity(Intent(this,recycle_vw::class.java))
         }
     }
 }
+
